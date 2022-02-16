@@ -10,9 +10,6 @@ const [showAddTask,setShowAddTask] = useState(false);
 
   const [tasks, setTasks] = useState([]);
 
-
-
- 
   //Toggle reminder
   const toggleReminder = (id) => {
     setTasks(tasks.map((task) => task.id === id ? { ...task, reminder: !task.reminder } : task));
